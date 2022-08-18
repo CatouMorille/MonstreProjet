@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class PickUpObject : MonoBehaviour
 {
+
     // Variable that allows to pick up when set true
     private bool pickUpAllowed;
+
+    [SerializeField] MirrorCount mirrorCount;
+    
 
     // Allow press E to interact
     private void Update()
     {
         if (pickUpAllowed && Input.GetKeyDown(KeyCode.E))
+        {
             PickUp();
+            mirrorCount.IncreaseMirrorCount();
+        }
     }
 
     // Enable Pick Up action if Player collides object

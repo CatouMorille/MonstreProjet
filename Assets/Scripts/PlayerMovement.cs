@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Player
     float moveSpeed = 5f;
-    float speedLimiter = 3f;
+    float speedLimiter = 0.7f;
     float inputHorizontal;
     float inputVertical;
 
