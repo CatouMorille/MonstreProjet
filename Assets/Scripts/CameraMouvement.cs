@@ -8,7 +8,7 @@ public class CameraMouvement : MonoBehaviour
     [SerializeField]
     Transform characterToFollow;
     [SerializeField]
-    Room room;
+    public Room room;
     [SerializeField]
     Camera camera;
     
