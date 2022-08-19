@@ -39,6 +39,18 @@ public class CameraMouvement : MonoBehaviour
         {
             newX = characterToFollow.position.x;
         }
+        else
+        {
+            if (characterToFollow.position.x <= xGauche)
+            {
+                newX = xGauche;
+            } 
+
+            if (characterToFollow.position.x >= xDroite)
+            {
+                newX = xDroite;
+            } 
+        }
 
         //Empeche la camera d'aller au-dela d'un certain y
         if (characterToFollow.position.y > yBas &&
@@ -46,6 +58,19 @@ public class CameraMouvement : MonoBehaviour
         {
             newY = characterToFollow.position.y;
         }
+        else
+        {
+            if (characterToFollow.position.y <= yBas)
+            {
+                newY = yBas;
+            } 
+
+            if (characterToFollow.position.y >= yHaut)
+            {
+                newY = yHaut;
+            }
+        }
+        
 
         //Mouvement de la carmera
         transform.position = new Vector3(newX, newY, transform.position.z);
