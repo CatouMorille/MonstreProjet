@@ -24,10 +24,10 @@ public class CameraMouvement : MonoBehaviour
         //Limites de la caméra
         float camHeight = camera.orthographicSize;
         float camWidth = camHeight * camera.aspect;
-        float xGauche = room.transform.position.x - room.transform.localScale.x / 2 + camWidth;
-        float xDroite = room.transform.position.x + room.transform.localScale.x / 2 - camWidth;
-        float yHaut  = room.transform.position.y + room.transform.localScale.y / 2 - camHeight;
-        float yBas  = room.transform.position.y - room.transform.localScale.y /2 + camHeight;
+        float xGauche = room.transform.position.x - room.width / 2 + camWidth;
+        float xDroite = room.transform.position.x + room.width / 2 - camWidth;
+        float yHaut  = room.transform.position.y + room.height / 2 - camHeight;
+        float yBas  = room.transform.position.y - room.height /2 + camHeight;
         
         float newX = transform.position.x;
         float newY = transform.position.y;

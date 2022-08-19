@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-    
+    [SerializeField]
+    public float width;
+    [SerializeField]
+    public float height;
 }
