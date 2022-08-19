@@ -16,6 +16,7 @@ public class CameraMouvement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ChangeRoom ();
     }
 
     // Update is called once per frame
@@ -32,18 +33,21 @@ public class CameraMouvement : MonoBehaviour
         float newX = transform.position.x;
         float newY = transform.position.y;
 
+        //Empeche la camera d'aller au-dela d'un certain x
         if (characterToFollow.position.x > xGauche && 
             characterToFollow.position.x < xDroite)
         {
             newX = characterToFollow.position.x;
         }
 
+        //Empeche la camera d'aller au-dela d'un certain y
         if (characterToFollow.position.y > yBas &&
             characterToFollow.position.y < yHaut)
         {
             newY = characterToFollow.position.y;
         }
 
+        //Mouvement de la carmera
         transform.position = new Vector3(newX, newY, transform.position.z);
 
         /*
@@ -87,8 +91,16 @@ public class CameraMouvement : MonoBehaviour
         
         */
         
+     
     }
 
+    public void ChangeRoom ()
+    {
+        float x = room.transform.position.x;
+        float y = room.transform.position.y;
+
+        transform.position = new Vector3(x, y, transform.position.z);
+    }
 
 }
 

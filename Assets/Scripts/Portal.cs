@@ -23,8 +23,11 @@ public class Portal : MonoBehaviour
         if(collision.tag == "Player")
         {
             player.transform.position = new Vector2(portal.transform.position.x, portal.transform.position.y);
+            
             CameraMouvement cameraMouvement = FindObjectOfType<CameraMouvement>();
             cameraMouvement.room = room;
+
+            cameraMouvement.ChangeRoom ();
         }
     }
 }
