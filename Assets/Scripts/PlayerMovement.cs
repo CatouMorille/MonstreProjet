@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         inputHorizontal = Input.GetAxisRaw("Horizontal");
         inputVertical = Input.GetAxisRaw("Vertical");
 
-        animator.SetFloat("velocity", rb.velocity.x + rb.velocity.y);
+        animator.SetFloat("velocity", MathF.Abs(rb.velocity.x) + MathF.Abs(rb.velocity.y));
     }
 
     void FixedUpdate()
