@@ -24,7 +24,7 @@ public class PickUpObject : MonoBehaviour
     // Enable Pick Up action if Player collides object
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name.Equals("Player"))
+        if (collision.gameObject.tag.Equals("Player"))
         {
             pickUpAllowed = true;
         }
@@ -33,7 +33,7 @@ public class PickUpObject : MonoBehaviour
     // Disable Pick Up if Player does not collide object anymore
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name.Equals("Player"))
+        if (collision.gameObject.tag.Equals("Player"))
         {
             pickUpAllowed = false;
         }

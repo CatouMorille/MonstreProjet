@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class MirrorCount : MonoBehaviour
 {
@@ -10,12 +11,12 @@ public class MirrorCount : MonoBehaviour
     private int mirror = 0;
 
     // Change text of counting
-    [SerializeField] private Text mirrorText;
+    [SerializeField] private TextMeshProUGUI mirrorText;
 
     // count mirror
     public void IncreaseMirrorCount()
     {
             mirror++;
-            mirrorText.text = "Mirror: " + mirror + "/3";
+            mirrorText.text = "Mirror Fragments: " + mirror + "/3";
     }
 }
