@@ -35,6 +35,8 @@ public class PlayerMovement : MonoBehaviour
     {
         inputHorizontal = Input.GetAxisRaw("Horizontal");
         inputVertical = Input.GetAxisRaw("Vertical");
+
+        animator.SetFloat("velocity", rb.velocity.x + rb.velocity.y);
     }
 
     void FixedUpdate()
