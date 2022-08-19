@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: background
+    uniqueID: 532689115
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: overlay
+    uniqueID: 11244989
     locked: 0
