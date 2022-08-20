@@ -185,11 +185,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6223084036456261694, guid: 96122473f5692dd46b632583c2e31019, type: 3}
   m_PrefabInstance: {fileID: 59013788}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &67505433 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4629486803355062435, guid: 87458a69fae344e94843b672bd399eac, type: 3}
-  m_PrefabInstance: {fileID: 2068407346}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &75443395
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,11 +954,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &357674292 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6223084036456261681, guid: 96122473f5692dd46b632583c2e31019, type: 3}
-  m_PrefabInstance: {fileID: 1135214258}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &368870281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,11 +1620,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   customImage: {fileID: 2094235805}
---- !u!1 &573898816 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6223084036456261681, guid: 96122473f5692dd46b632583c2e31019, type: 3}
-  m_PrefabInstance: {fileID: 518797708}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &603187637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,11 +1846,11 @@ PrefabInstance:
     - target: {fileID: 5769567818264267405, guid: a675cf0171dd56a40b1aa48210b14c28, type: 3}
       propertyPath: room
       value: 
-      objectReference: {fileID: 2068288811}
+      objectReference: {fileID: 0}
     - target: {fileID: 5769567818264267405, guid: a675cf0171dd56a40b1aa48210b14c28, type: 3}
       propertyPath: portal
       value: 
-      objectReference: {fileID: 1103453552}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a675cf0171dd56a40b1aa48210b14c28, type: 3}
 --- !u!4 &647443604 stripped
@@ -2548,7 +2533,7 @@ PrefabInstance:
     - target: {fileID: 6841982372925885685, guid: 13389862bea800eabb096ea56726beef, type: 3}
       propertyPath: room
       value: 
-      objectReference: {fileID: 2068288811}
+      objectReference: {fileID: 0}
     - target: {fileID: 6841982372925885685, guid: 13389862bea800eabb096ea56726beef, type: 3}
       propertyPath: camera
       value: 
@@ -2556,7 +2541,7 @@ PrefabInstance:
     - target: {fileID: 6841982372925885685, guid: 13389862bea800eabb096ea56726beef, type: 3}
       propertyPath: characterToFollow
       value: 
-      objectReference: {fileID: 67505433}
+      objectReference: {fileID: 0}
     - target: {fileID: 6841982372925885686, guid: 13389862bea800eabb096ea56726beef, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -3192,11 +3177,11 @@ PrefabInstance:
     - target: {fileID: 5769567818264267405, guid: a675cf0171dd56a40b1aa48210b14c28, type: 3}
       propertyPath: room
       value: 
-      objectReference: {fileID: 2098624316}
+      objectReference: {fileID: 0}
     - target: {fileID: 5769567818264267405, guid: a675cf0171dd56a40b1aa48210b14c28, type: 3}
       propertyPath: portal
       value: 
-      objectReference: {fileID: 357674292}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a675cf0171dd56a40b1aa48210b14c28, type: 3}
 --- !u!4 &1050469466 stripped
@@ -3666,11 +3651,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ed922e105752234f9054643975e6689, type: 3}
---- !u!1 &1103453552 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6223084036456261681, guid: 96122473f5692dd46b632583c2e31019, type: 3}
-  m_PrefabInstance: {fileID: 981646628}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1124283808
 GameObject:
   m_ObjectHideFlags: 0
@@ -4543,11 +4523,11 @@ PrefabInstance:
     - target: {fileID: 5769567818264267405, guid: a675cf0171dd56a40b1aa48210b14c28, type: 3}
       propertyPath: room
       value: 
-      objectReference: {fileID: 2068288811}
+      objectReference: {fileID: 0}
     - target: {fileID: 5769567818264267405, guid: a675cf0171dd56a40b1aa48210b14c28, type: 3}
       propertyPath: portal
       value: 
-      objectReference: {fileID: 1312941356}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a675cf0171dd56a40b1aa48210b14c28, type: 3}
 --- !u!4 &1255535054 stripped
@@ -4628,11 +4608,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3855531606251144632, guid: 24a14c3aeeb39c444843abe0b472203b, type: 3}
   m_PrefabInstance: {fileID: 1268399617}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1312941356 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6223084036456261681, guid: 96122473f5692dd46b632583c2e31019, type: 3}
-  m_PrefabInstance: {fileID: 776266367}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1328751859
 PrefabInstance:
@@ -5170,7 +5145,7 @@ GameObject:
   - component: {fileID: 1472307189}
   - component: {fileID: 1472307188}
   m_Layer: 0
-  m_Name: SoundManager
+  m_Name: SoundManager (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6052,11 +6027,11 @@ PrefabInstance:
     - target: {fileID: 5769567818264267405, guid: a675cf0171dd56a40b1aa48210b14c28, type: 3}
       propertyPath: room
       value: 
-      objectReference: {fileID: 2097160092}
+      objectReference: {fileID: 0}
     - target: {fileID: 5769567818264267405, guid: a675cf0171dd56a40b1aa48210b14c28, type: 3}
       propertyPath: portal
       value: 
-      objectReference: {fileID: 573898816}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a675cf0171dd56a40b1aa48210b14c28, type: 3}
 --- !u!4 &1761447146 stripped
@@ -7081,7 +7056,7 @@ GameObject:
   - component: {fileID: 2068288812}
   - component: {fileID: 2068288811}
   m_Layer: 0
-  m_Name: Hall
+  m_Name: Hall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7132,7 +7107,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4629486803355062432, guid: 87458a69fae344e94843b672bd399eac, type: 3}
       propertyPath: m_Name
-      value: PlayerAnimation
+      value: PlayerAnimation (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4629486803355062435, guid: 87458a69fae344e94843b672bd399eac, type: 3}
       propertyPath: m_RootOrder
@@ -7267,7 +7242,7 @@ GameObject:
   - component: {fileID: 2097160093}
   - component: {fileID: 2097160092}
   m_Layer: 0
-  m_Name: Room3
+  m_Name: Room3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7322,7 +7297,7 @@ GameObject:
   - component: {fileID: 2098624317}
   - component: {fileID: 2098624316}
   m_Layer: 0
-  m_Name: Room1
+  m_Name: Room1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
