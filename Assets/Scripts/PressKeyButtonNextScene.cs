@@ -2,16 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class EndSceneTrigger : MonoBehaviour
+
+public class PressKeyButtonNextScene : MonoBehaviour
 {
-    [SerializeField]
-    MirrorCount mirrorCount;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void Update()
     {
-        if (mirrorCount.mirror == 3)
+        if (Input.anyKeyDown)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

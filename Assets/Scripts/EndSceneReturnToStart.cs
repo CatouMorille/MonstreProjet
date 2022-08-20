@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class EndSceneReturnToStart : MonoBehaviour
 {
-    public void MoveToScene(int sceneID)
+    public int sceneID;
+
+    public void Update()
     {
-        SceneManager.LoadScene(sceneID);
+        if (Input.anyKeyDown)
+        {
+            SceneManager.LoadScene(sceneID);
+        }
     }
 }
+
