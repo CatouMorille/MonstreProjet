@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PickUpObject : MonoBehaviour
 {
+    // Variable that allows to play a sound
+    public AudioClip mirrorSound;
 
     // Variable that allows to pick up when set true
     private bool pickUpAllowed;
@@ -18,15 +20,14 @@ public class PickUpObject : MonoBehaviour
     public GameObject mirror2;
     public GameObject mirror3;
 
-
-
-
     // Allow press E to interact
-
     private void Update()
     {
         if (pickUpAllowed && Input.GetKeyDown(KeyCode.E))
         {
+            //mirrorCount.IncreaseMirrorCount();
+            GameObject.Find("SoundManager").GetComponent<AudioSource>().clip = mirrorSound;
+            GameObject.Find("SoundManager").GetComponent<SoundManager>().PlayEffect();
             PickUp();
             mirrorCount.IncreaseMirrorCount();
             Destroy(gameObject);
