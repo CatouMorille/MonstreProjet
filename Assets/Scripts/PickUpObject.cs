@@ -9,15 +9,27 @@ public class PickUpObject : MonoBehaviour
     private bool pickUpAllowed;
 
     [SerializeField] MirrorCount mirrorCount;
-    
+
+    [SerializeField] ImageMirrorShow imageMirror1;
+    [SerializeField] ImageMirrorShow imageMirror2;
+    [SerializeField] ImageMirrorShow imageMirror3;
+
+    public GameObject mirror1;
+    public GameObject mirror2;
+    public GameObject mirror3;
+
+
+
 
     // Allow press E to interact
+
     private void Update()
     {
         if (pickUpAllowed && Input.GetKeyDown(KeyCode.E))
         {
             PickUp();
             mirrorCount.IncreaseMirrorCount();
+            Destroy(gameObject);
         }
     }
 
@@ -42,7 +54,21 @@ public class PickUpObject : MonoBehaviour
     // Object disappears when "picked up"
     private void PickUp()
     {
-        Destroy(gameObject);
+        if(mirrorCount.mirror == 0)
+        {
+            imageMirror1.ShowImage();
+            Destroy(mirror1);
+        }
+        if (mirrorCount.mirror == 1)
+        {
+            imageMirror2.ShowImage();
+            Destroy(mirror2);
+        }
+        if (mirrorCount.mirror == 2)
+        {
+            imageMirror3.ShowImage();
+            Destroy(mirror3);
+        }
     }
     
 }

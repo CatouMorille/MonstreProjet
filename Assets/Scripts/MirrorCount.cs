@@ -8,7 +8,7 @@ public class MirrorCount : MonoBehaviour
 {
     
     // Variable Count Collectible from 0
-    private int mirror = 0;
+    public int mirror = 0;
 
     // Change text of counting
     [SerializeField] private TextMeshProUGUI mirrorText;
