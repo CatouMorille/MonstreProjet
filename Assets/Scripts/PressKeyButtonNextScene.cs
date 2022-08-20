@@ -8,7 +8,7 @@ public class PressKeyButtonNextScene : MonoBehaviour
 {
     public void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
